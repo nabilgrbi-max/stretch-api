@@ -1,5 +1,5 @@
 # Étape 1: On part d'une base Linux avec Python
-FROM python:3.10-slim
+FROM python:3.13-slim
 
 # Étape 2: On installe les outils système (dont RubberBand)
 RUN apt-get update && apt-get install -y rubberband-cli
