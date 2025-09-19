@@ -13,4 +13,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Étape 5: On définit la commande pour démarrer le serveur
-CMD ["python", "-m", "uvicorn", "api:app", "--host", "0.0.0.0", "--port", "10000"]
+CMD ["python", "-m", "uvicorn", "api:app", "--host", "0.0.0.0", "--port", "$PORT"]
+
